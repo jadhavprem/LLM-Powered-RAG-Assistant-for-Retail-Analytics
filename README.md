@@ -15,12 +15,9 @@ Key ideas:
 * Automatic SQL repair loop (uses an LLM to fix runtime errors) and up to 3 attempts before failing.
 * Streamlit UI for quick experimentation with natural language queries.
 
----
-
-
-
 https://github.com/user-attachments/assets/4cee71a2-fc62-48c2-9c8a-e435f7e6dd03
 
+---
 
 
 ## Project structure
