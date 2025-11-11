@@ -27,7 +27,7 @@ def get_data_from_query(query: str,
     # 2) First repair with GPT-4o
     repaired_sql_1 = repair_sql_with_error(query, bad_sql=sql, error_text=err1,
                                            sql_dialect=sql_dialect, model="gpt-4o")
-    print(f"Running second attempt with repaired SQL...\n{repair_sql_with_error}\n")
+    print(f"Running second attempt with repaired SQL...\n{repaired_sql_1}\n")
     try:
         return fetch_data(repaired_sql_1) # success
     except (AnalysisException, ParseException, Exception) as e2:
@@ -333,4 +333,5 @@ def repair_sql_with_error(user_query: str,
 
     # strip accidental fences
     sql = re.sub(r"^\s*```(?:sql)?\s*|\s*```\s*$", "", sql, flags = re.IGNORECASE | re.DOTALL).strip()
+
     return sql
