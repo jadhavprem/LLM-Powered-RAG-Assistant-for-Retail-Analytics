@@ -17,6 +17,12 @@ Key ideas:
 
 ---
 
+
+
+https://github.com/user-attachments/assets/4cee71a2-fc62-48c2-9c8a-e435f7e6dd03
+
+
+
 ## Project structure
 
 ```
